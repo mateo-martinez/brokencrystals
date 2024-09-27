@@ -76,6 +76,10 @@ async function bootstrap() {
   https.globalAgent.maxSockets = Infinity;
 
   const server = fastify({
+    logger:
+      process.env.FASTIFY_LOGGER === 'true'
+        ? { level: process.env.FASTIFY_LOG_LEVEL || 'warn' }
+        : false,
     trustProxy: true,
     onProtoPoisoning: 'ignore',
     https:
