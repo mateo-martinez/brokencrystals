@@ -164,8 +164,7 @@ export class AppController {
     description: API_DESC_CONFIG_SERVER
   })
   @ApiOkResponse({
-    type: AppConfig,
-    status: 200
+    type: AppConfig
   })
   getConfig(): AppConfig {
     this.logger.debug('Called getConfig');
@@ -178,8 +177,7 @@ export class AppController {
     description: SWAGGER_DESC_SECRETS
   })
   @ApiOkResponse({
-    type: Object,
-    status: 200
+    type: Object
   })
   getSecrets(): Record<string, string> {
     const secrets = {
