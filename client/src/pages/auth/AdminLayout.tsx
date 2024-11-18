@@ -15,7 +15,7 @@ export const AdminLayout: FC<PropsWithChildren> = ({ children }) => {
                   alt=""
                   className="img-fluid"
                 />
-                BROKEN CRYSTALS
+                KALBYC
               </a>
             </div>
             {children}
