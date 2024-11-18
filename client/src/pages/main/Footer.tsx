@@ -97,13 +97,13 @@ export const Footer: FC = () => {
                   className="img-fluid"
                 />
               </Link>
-              <h3>BROKEN CRYSTALS</h3>
+              <h3>KALBYC</h3>
 
               <div>
-                A108 Adam Street <br />
-                New York, NY 535022
+                21 Jump Street <br />
+                Liverpool, Merseyside L8 6XF
                 <br />
-                United States <br />
+                United Kingdom <br />
                 <br />
                 <strong>Phone:</strong>{' '}
                 {phone && (
@@ -112,7 +112,7 @@ export const Footer: FC = () => {
                   </span>
                 )}
                 <br />
-                <strong>Email:</strong> info@example.com
+                <strong>Email:</strong> info@kalbyc.com
                 <br />
                 <a href="/api/secrets">🤫</a>
               </div>
@@ -166,7 +166,7 @@ export const Footer: FC = () => {
             <div className="copyright">
               &copy; Copyright{' '}
               <strong>
-                <span>Broken Crystals</span>
+                <span>Kalbyc Ltd</span>
               </strong>
               . All Rights Reserved
             </div>
