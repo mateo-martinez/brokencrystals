@@ -29,7 +29,7 @@ export const Header: FC<Props> = (props: Props) => {
           <div className="col-xl-9 d-flex align-items-center">
             <Link to="/" className="logo mr-auto" onClick={sendGoTo('/')}>
               <img src="assets/img/logo.png" alt="" className="img-fluid" />{' '}
-              BROKEN CRYSTALS
+              KALBYC
             </Link>
 
             <Nav />
