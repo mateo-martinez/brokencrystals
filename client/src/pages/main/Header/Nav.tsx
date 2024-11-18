@@ -54,11 +54,6 @@ const menu: Array<MenuItem> = [
       }
     ]
   },
-  {
-    name: 'Vulnerabilities',
-    path: 'https://github.com/NeuraLegion/brokencrystals#vulnerabilities-overview',
-    newTab: true
-  }
 ];
 
 export const Nav = () => {
