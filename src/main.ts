@@ -192,14 +192,14 @@ async function bootstrap() {
     .useGlobalFilters(new GlobalExceptionFilter(httpAdapter));
 
   const options = new DocumentBuilder()
-    .setTitle('Broken Crystals')
+    .setTitle('Kalbyc')
     .setDescription(
       `
   ![BC logo](/assets/img/logo_blue_small.png)
 
-  This is the _Broken Crystals_ REST API.
+  This is the _Kalbyc_ REST API.
 
-  _Broken Crystals_ is a benchmark application that uses modern technologies and implements a set of common security vulnerabilities.
+  _Kalbyc_ is a benchmark application that uses modern technologies and implements a set of functionalities
 
   ## Available endpoints
 
