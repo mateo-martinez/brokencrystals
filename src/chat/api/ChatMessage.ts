@@ -12,4 +12,5 @@ export class ChatMessage {
     description: 'The contents of the message'
   })
   content: string;
+  userId: string;
 }

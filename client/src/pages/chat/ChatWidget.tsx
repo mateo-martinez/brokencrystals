@@ -29,7 +29,7 @@ export const ChatWidget: FC = () => {
       return;
     }
 
-    const userMessage: ChatMessage = { role: 'user', content: userInput };
+    const userMessage: ChatMessage = { role: 'user', content: userInput, userId: sessionStorage.getItem('user_id') || '' };
     const messages = [...chatMessages, userMessage];
     setChatMessages(messages);
     setLoading(true);
@@ -39,7 +39,8 @@ export const ChatWidget: FC = () => {
 
       const serverMessage: ChatMessage = {
         role: 'assistant',
-        content: answer
+        content: answer,
+        userId: ''
       };
       setChatMessages((messages) => [...messages, serverMessage]);
     } catch {
@@ -47,7 +48,8 @@ export const ChatWidget: FC = () => {
         ...messages,
         {
           role: 'assistant',
-          content: ''
+          content: '',
+          userId: ''
         }
       ]);
     } finally {

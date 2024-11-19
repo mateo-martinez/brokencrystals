@@ -25,9 +25,9 @@ export class ChatController {
     description: 'Chatbot answer',
     type: String
   })
-  async query(@Body() messages: ChatMessage[]): Promise<string> {
+  async query(@Body() messages: ChatMessage[], userId: string): Promise<string> {
     try {
-      return await this.chatService.query(messages);
+      return await this.chatService.processUserRequest(messages[messages.length-1].content, messages[messages.length-1].userId);
     } catch (err) {
       throw new HttpException(
         `Chat API response error: ${err}`,
