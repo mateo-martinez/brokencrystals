@@ -49,7 +49,7 @@
     "graphql": "^16.9.0",
     "jose": "^5.9.2",
     "jsonwebtoken": "^9.0.2",
-    "jwk-to-pem": "^2.0.6",
+    "jwk-to-pem": "^2.0.7",
     "jwt-simple": "^0.5.6",
     "libxmljs": "^1.0.11",
     "mercurius": "^14.1.0",
